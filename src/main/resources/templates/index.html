@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Course App</title>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #FFC0CB	;} /* Pink */
+.button4 {background-color: #FF0000 ;} /* Red */
+.button5 {background-color: #FFFF00 ;} /* Yellow */
+</style>
+</head>
+<body>
+
+<h1>Welcome to the Course Application</h1>
+
+<form action="/courses_all" method="get">
+<button type="Submit" class="button1">Get all courses</button>
+</form>
+<br>
+<form action="/courses_id" method="get">
+<button type="Submit" class="button5">Get all courses by ID</button>
+</form>
+<br>
+<form action="/addnewcourse" method="get">
+<button type="Submit" class="button2">Add new Coures</button>
+</form>
+
+<br>
+<form action="/updatecourse" method="get">
+<button type="Submit" class="button3">update existing Coures</button>
+</form>
+
+<br>
+<form action="/deletecourse" method="get">
+<button type="Submit" class="button4">Delete Coures</button>
+</form>
+
+</body>
+</html>

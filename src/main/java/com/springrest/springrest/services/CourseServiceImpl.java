@@ -97,9 +97,17 @@ public class CourseServiceImpl implements CourseService {
 //			
 //		}
 //		return "Course deleted";
-		Course entity=courseDao.getOne(courseId);
+		//Course entity=courseDao.getOne(courseId);
+		String f;
+		
+		try {
+		Course entity=courseDao.findById(courseId).get();
 		courseDao.delete(entity);
-		return "Course deleted";
+		f="Course deleted";
+		}catch(Exception e) {
+			f="ops !! Somthing Went wrong";
+		}
+		return f;
 	
 	}
 }
