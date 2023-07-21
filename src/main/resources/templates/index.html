@@ -1,53 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Course App</title>
-<style>
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Course App</title>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/aaf9f1f44b.js"
+			crossorigin="anonymous"
+		></script>
+		
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
-.button1 {background-color: #4CAF50;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
-.button3 {background-color: #FFC0CB	;} /* Pink */
-.button4 {background-color: #FF0000 ;} /* Red */
-.button5 {background-color: #FFFF00 ;} /* Yellow */
+body {
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://images.wallpaperscraft.com/image/single/books_library_shelves_138556_3840x2160.jpg);
+	background-size: cover;
+	backdrop-filter: blur(5px);
+	max-width: 1440px;
+	margin-inline: auto;
+	padding-inline: 3rem;
+}
+
+h1 {
+	color: #fff;
+	width: 100%;
+	font-size: 5rem;
+	text-shadow: 8px 8px 12px black;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	margin-top: 7rem;
+	margin-bottom: 13rem;
+}
+
+button {
+	border: none;
+	border-radius: 11px;
+	color: #000;
+	padding: 12px 23px;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	scale: 1.05;
+	transition: all 0.5s ease-out;
+}
+
+.button1 {
+	background-color: #4caf50;
+} /* Green */
+.button2 {
+	background-color: #008cba;
+} /* Blue */
+.button3 {
+	background-color: #ffc0cb;
+} /* Pink */
+.button4 {
+	background-color: #a83232;
+} /* Red */
+.button5 {
+	background-color: #ffff00;
+} /* Yellow */
+
+footer {
+	background-color: #0f0f10;
+	padding: 2rem 0;
+	margin-top: 14rem;
+	color: #fff;
+}
+
+footer p {
+	text-align: center;
+}
+
+.github {
+	margin-left: 5rem;
+}
+
+footer p i {
+	margin-left: 1rem;
+}
+
+a {
+	color: #fff;
+}
+		
 </style>
-</head>
-<body>
-
-<h1>Welcome to the Course Application</h1>
-
-<form action="/courses_all" method="get">
-<button type="Submit" class="button1">Get all courses</button>
-</form>
-<br>
-<form action="/courses_id" method="get">
-<button type="Submit" class="button5">Get all courses by ID</button>
-</form>
-<br>
-<form action="/addnewcourse" method="get">
-<button type="Submit" class="button2">Add new Coures</button>
-</form>
-
-<br>
-<form action="/updatecourse" method="get">
-<button type="Submit" class="button3">update existing Coures</button>
-</form>
-
-<br>
-<form action="/deletecourse" method="get">
-<button type="Submit" class="button4">Delete Coures</button>
-</form>
-
-</body>
+	</head>
+	<body>
+		<div class="actions">
+			<form action="/courses_all" method="get">
+				<button type="Submit" class="button1">Get all courses</button>
+			</form>
+			<br />
+			<form action="/courses_id" method="get">
+				<button type="Submit" class="button5">Get all courses by ID</button>
+			</form>
+			<br />
+			<form action="/addnewcourse" method="get">
+				<button type="Submit" class="button2">Add new coures</button>
+			</form>
+			<br />
+			<form action="/updatecourse" method="get">
+				<button type="Submit" class="button3">Update existing coures</button>
+			</form>
+			<br />
+			<form action="/deletecourse" method="get">
+				<button type="Submit" class="button4">Delete Coures</button>
+			</form>
+		</div>
+		<h1>Welcome to the Course Application</h1>
+		<footer>
+			<p>
+				Copyright @ 2023 Dhrubojyoti Sarkar
+				<a href="https://github.com/dhrubojyotisarkar-TECH"
+					><i class="fa-brands fa-github fa-lg github"></i
+				></a>
+				<a href="https://www.linkedin.com/in/dhrubojyoti-sarkar-465989200"
+					><i class="fa-brands fa-linkedin fa-lg"></i
+				></a>
+			</p>
+		</footer>
+	</body>
 </html>

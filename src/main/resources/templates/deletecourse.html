@@ -3,14 +3,112 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>deletecourse</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://images.wallpaperscraft.com/image/single/books_library_shelves_138556_3840x2160.jpg);
+	background-size: cover;
+	backdrop-filter: blur(5px);
+	max-width: 1440px;
+	margin-inline: auto;
+	padding-inline: 3rem;
+	color: #fff;
+}
+
+h3 {
+	color: #fff;
+	width: 85%;
+	font-size: 3rem;
+	text-shadow: 8px 8px 12px black;
+}
+
+button {
+	border: none;
+	border-radius: 11px;
+	color: #000;
+	padding: 12px 23px;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	scale: 1.05;
+	transition: all 0.5s ease-out;
+}
+
+.button1 {
+	background-color: #4caf50;
+} /* Green */
+.button2 {
+	background-color: #008cba;
+} /* Blue */
+.button3 {
+	background-color: #ffc0cb;
+} /* Pink */
+.button4 {
+	background-color: #a83232;
+} /* Red */
+.button5 {
+	background-color: #ffff00;
+} /* Yellow */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #000000;
+}
+
+</style>
 </head>
 <body>
+<h3>Put the Id of the Course which you want to delete</h3>
+<div>
 <form action="/courses_delete" method="get">
-<h1>First put the Id of the course which you want to delete</h1>
 <br>
-ID of the Course Which you want to delete : <input type="text" name="id_main">
+<label for="id_main"><b>ID</b></label>
+<input type="text" name="id_main">
 <br>
-<button type="Submit" class="button1">Delete Coures</button>
-
+<button type="Submit" class="button4">Delete Coures</button>
+</form>
+</div>
 </body>
 </html>
